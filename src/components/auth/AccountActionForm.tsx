@@ -144,8 +144,11 @@ export function AccountActionForm({ mode }: AccountActionFormProps) {
         )}
 
         {/* Verbatim Instruction */}
-        <div className="bg-surface-1 border border-line rounded-lg p-3 text-xs text-ink font-medium">
-          Instruction: Enter your iAccess ID and click Submit.
+        <div className="bg-yellow-50 border border-yellow-400 rounded-lg p-3 text-xs text-yellow-950 font-medium flex items-center gap-2.5 shadow-2xs">
+          <AlertCircle className="w-4 h-4 text-yellow-600 shrink-0" />
+          <span>
+            <strong className="font-semibold text-yellow-900">Instruction:</strong> Enter your iAccess ID and click Submit.
+          </span>
         </div>
 
         {/* iAccess ID field */}
